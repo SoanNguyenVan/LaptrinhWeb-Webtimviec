@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website tìm việc toàn quốc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">TìmViệc</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a href="#">Việc làm</a>
+                        <div class="dropdown-content" style="display: none;">
+                            <a href="#">Việc làm đã ứng tuyển</a><br>
+                            <a href="#">Việc làm đã lưu</a><br>
+                            <a href="#">Việc làm IT</a><br>
+                            <a href="#">Việc làm seior</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Hồ sơ&amp;CV</a>
+                        <div class="dropdown-content">
+                            <a href="#">Quản lý CV</a><br>
+                            <a href="#">Quản lý Cover Letter</a><br>
+                            <a href="#">Mẫu CV</a><br>
+                            <a href="#">Mẫu Cover Letter</a><br>
+                            <a href="#">Dịch vụ tư vấn CV</a><br>
+                            <a href="#">Hướng dẫn viết CV theo ngành nghề</a><br>
+                            <a href="#">Thư việc CV theo nghành nghề</a><br>
+                            <a href="#">Top CV Profile</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Công ty</a>
+                        <div class="dropdown-content">
+                            <a href="#">Danh sách công ty</a><br>
+                            <a href="#">Top công ty</a><br>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Phát triển sự nghiệp</a>
+                        <div class="dropdown-content">
+                            <a href="#">Top Cv Contest</a><br>
+                            <a href="#">Top CV Skills</a><br>
+                            <a href="#">Việc làm IT</a><br>
+                            <a href="#">Việc làm seior</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Công cụ</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tính lương</a><br>
+                            <a href="#">Tính thuế thu nhập cá nhân</a><br>
+                            <a href="#">Lập kế hoạch tốt nghiệp</a><br>
+                            <a href="#">Tính Bảo hiểm thất nghiệp</a><br>
+                            <a href="#">Tính bảo hiểm xã hội một lần</a><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="search" placeholder="Tìm kiếm công việc">
+                <a href="#"><button class="btn">Tìm Kiếm</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdown.addEventListener('mouseover', () => {
+            dropdownContent.style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseout', () => {
+            dropdownContent.style.display = 'none';
+        });
+    </script>
+
+<main>
+<div class="maucv1">
+    <h1>Công cụ tạo CV miễn phí</h1>
+    <h2>Nhanh-dễ dàng-hiệu quả</h2>
+    <button class="buttonmaucv">Tạo CV</button>
+</div>
+</main>
+
+
+
+</body>
+</html>

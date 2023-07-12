@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website tìm việc toàn quốc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">TìmViệc</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a href="#">Việc làm</a>
+                        <div class="dropdown-content" style="display: none;">
+                            <a href="#">Việc làm đã ứng tuyển</a><br>
+                            <a href="#">Việc làm đã lưu</a><br>
+                            <a href="#">Việc làm IT</a><br>
+                            <a href="#">Việc làm seior</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Hồ sơ&amp;CV</a>
+                        <div class="dropdown-content">
+                            <a href="#">Quản lý CV</a><br>
+                            <a href="#">Quản lý Cover Letter</a><br>
+                            <a href="#">Mẫu CV</a><br>
+                            <a href="#">Mẫu Cover Letter</a><br>
+                            <a href="#">Dịch vụ tư vấn CV</a><br>
+                            <a href="#">Hướng dẫn viết CV theo ngành nghề</a><br>
+                            <a href="#">Thư việc CV theo nghành nghề</a><br>
+                            <a href="#">Top CV Profile</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Công ty</a>
+                        <div class="dropdown-content">
+                            <a href="#">Danh sách công ty</a><br>
+                            <a href="#">Top công ty</a><br>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Phát triển sự nghiệp</a>
+                        <div class="dropdown-content">
+                            <a href="#">Top Cv Contest</a><br>
+                            <a href="#">Top CV Skills</a><br>
+                            <a href="#">Việc làm IT</a><br>
+                            <a href="#">Việc làm seior</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Công cụ</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tính lương</a><br>
+                            <a href="#">Tính thuế thu nhập cá nhân</a><br>
+                            <a href="#">Lập kế hoạch tốt nghiệp</a><br>
+                            <a href="#">Tính Bảo hiểm thất nghiệp</a><br>
+                            <a href="#">Tính bảo hiểm xã hội một lần</a><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="search" placeholder="Tìm kiếm công việc">
+                <a href="#"><button class="btn">Tìm Kiếm</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const dropdown = document.querySelector('.dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        dropdown.addEventListener('mouseover', () => {
+            dropdownContent.style.display = 'block';
+        });
+
+        dropdown.addEventListener('mouseout', () => {
+            dropdownContent.style.display = 'none';
+        });
+    </script>
+
+<main>
+<div class="IT">
+    <h1>Việc làm IT</h1>
+    <h2>Việc làm IT xịn dành cho Developer chất</h2>
+</div>
+
+
+<div class="IT1">
+    
+    
+    <div>     
+    <select id="category" name="category"> 
+        <option value="1">Cấp Bậc</option> <option value="2">Mới tốt nghiệp/thực tập sinh</option> <option value="3">Nhân Viên</option> 
+        <option value="4">Trưởng phòng</option>
+    </select><br><br>
+</div>
+<div>
+    
+    <select id="category" name="category"> <option value="5">Lương</option> 
+        <option value="6">1-3 triệu</option>
+         <option value="7">3-5 triệu</option>
+         <option value="8">5-10 triệu</option>
+         <option value="9">10-20 triệu</option>
+         <option value="10">Thương lượng</option>
+     </select><br><br>
+</div>
+<div>
+    <select id="category" name="category"> <option value="11">Kinh nghiệm</option> <option value="12">Không yêu cầu</option> <option value="13">1-2 năm kinh nghiệm</option>
+    <option  value="14">3-4 năm kinh nghiệm</option>
+    <option  value="15">5-6 năm kinh nghiệm</option>
+     </select><br><br>
+</div>
+<div>
+    <select id="category" name="category"> <option value="16">Loại hình công việc</option> <option value="17">Bán thời gian</option> 
+
+        <option value="18">Không cố định</option>
+        <option value="18">Toàn thời gian cố định</option>
+    </select>
+        <br><br>
+       
+        
+    </div>
+</div>
+<div class ="checkbox">
+    <input type="checkbox" id="subscribe" name="subscribe">Nam<br><br>
+    <input type="checkbox" id="subscribe" name="subscribe">Nữ<br><br>
+ </div>
+
+
+    <div class="job">
+      <h2>Chuyên viên bảo mật hệ thống</h2>
+      <p class="location">Hai Bà Trưng,Hà Nội</p>
+      <p class="luong">Lương thử việc 8tr-lương cứng ~20tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+    </div>
+
+    <div class="job">
+      <h2>Quản trị dữ liệu</h2>
+      <p class="location">Đống Đa,Hà Nội</p>
+      <p class="luong">Lương cứng~13tr</p>
+      <button class="apply-button">Ứng tuyển</button>
+    </div>
+
+    <div class="job">
+        <h2>Thiết kế game</h2>
+        <p class="location">Hà Đông,Hà Nội</p>
+        <p  class="luong">Lương cứng ~16tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+      </div>
+
+      <div class="job">
+        <h2>Chuyên gia phân tích hệ thống máy tính</h2>
+        <p class="location">Hà Đông,Hà Nội</p>
+        <p  class="luong">Lương cứng ~18tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+      </div>
+
+      <div class="job">
+        <h2>Nhân viên thiết kế website</h2>
+        <p class="location">Thanh xuân,Hà Nội</p>
+        <p  class="luong">Lương cứng ~11tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+      </div>
+
+    
+    </main>
+
+
+
+</body>
+</html>

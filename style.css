@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.main{
+   width: 100%;
+    
+}
+.navbar{
+    width: 1200px;
+    float: left;
+    height: 60px;
+    margin: auto;
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+   
+}
+.logo{
+    color: rgb(206, 27, 27);
+    font-size: 55px;
+    font-family: Arial;  
+    float: left;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 27px;
+    font-size: 15px;
+    
+}
+ul li a{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+color: black;
+    transition: 0.4 ease-in-out;
+   
+
+}
+ul li a:hover{
+    color:  rgb(68, 117, 82);
+}
+
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(241, 17, 17);
+    margin-top: 20px;
+    color: #18cead;
+    border-right: none;
+    font-size: 15px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px ;
+    border-top-left-radius: 5px;
+
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    background:  rgb(222, 11, 11);
+    border: 2px solid rgb(218, 7, 7);
+    margin-top: 20px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(109, 82, 82, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    
+    padding: 50px;;
+  }
+
+.IT {
+    border: 1px solid #0a0f0b;
+    padding: 100px;
+    margin-top: 50px ;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 11, 6);
+    text-align: center;
+  
+ 
+}
+
+.IT h2 {
+color: rgb(109, 122, 114);
+}
+.IT1 {
+    display: flex;
+    
+}
+
+select{
+margin-right: 50px;
+width: 200px;
+left: 0;
+height: 35px;
+background-color: #edf5ed;
+}
+
+.job {
+    border: 1px solid #cccccc;
+    padding: 50px;
+    margin-top: 50px ;
+    margin-bottom: 20px;
+    background-color: rgb(226, 233, 228);
+    color: rgb(68, 60, 70);
+    width: 50%;
+  }
+
+  .job h2 {
+    margin: 0;
+  }
+
+  .job p {
+    margin-top: 10px;
+  }
+.container {
+    position: relative;
+}
+
+  .apply-button {
+    position: absolute;  
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #de1818;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 625px;
+  }
+
+
+  .apply-button:hover {
+    background-color: #72b670;
+  }
+
+  .luong{
+color:rgb(206, 73, 29);
+  }
+ 
+  .checkbox{
+  left: 0;
+    margin-right: 10px;
+  }
+  .maucv1{
+    border: 1px solid #ee5311;
+    padding: 200px;
+    margin-top: 50px ;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(7, 11, 6);
+    text-align: center;
+ background-image: url(https://cafefcdn.com/2019/8/22/edf-tempo-couleur-de-demain-la-edf-tempo-historique-couleur-jour-et-demain-15664469984471689659056.jpg);
+ background-size: 100%;
+ opacity: 0.8;
+    left:0;
+  }
+
+  .maucv1 h1{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+  }
+
+  .maucv1 h2{
+    color: rgb(255, 254, 254);
+    font-size: 65px;
+  }
+
+  .buttonmaucv{
+    position: absolute;  
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #e30d0d;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-top: 10px;
+   left: 43%;
+   bottom: 28%;
+  }
+  .buttonmaucv:hover {
+    background-color: #72b670;
+  }
