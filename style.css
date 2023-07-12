@@ -1,242 +1,187 @@
-*{
+* {
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: aqua;
+}
+
+.logo {
+    color: rgb(150, 27, 206);
+    font-size: 35px;
+    padding-left: 15px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.menu {
     
 }
 
-.main{
-   width: 100%;
-    
-}
-.navbar{
-    width: 1200px;
-    float: left;
-    height: 60px;
-    margin: auto;
-
-}
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-   
-}
-.logo{
-    color: rgb(206, 27, 27);
-    font-size: 55px;
-    font-family: Arial;  
-    float: left;
-}
-
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-ul{
-    float: left;
+ul {
     display: flex;
     justify-content: center;
-    
-    
-}
-ul li{
+    align-items: center;
     list-style: none;
-    margin-left: 50px;
-    margin-top: 27px;
-    font-size: 15px;
-    
 }
-ul li a{
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
     text-decoration: none;
-    font-family: Arial;
     font-weight: bold;
-color: black;
-    transition: 0.4 ease-in-out;
-   
-
-}
-ul li a:hover{
-    color:  rgb(68, 117, 82);
+    transition: color 0.4s ease-in-out;
 }
 
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-
-}
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 30px;
-    border: 1px solid rgb(241, 17, 17);
-    margin-top: 20px;
-    color: #18cead;
-    border-right: none;
-    font-size: 15px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px ;
-    border-top-left-radius: 5px;
-
-}
-.btn{
-    width: 100px;
-    height: 30px;
-    background:  rgb(222, 11, 11);
-    border: 2px solid rgb(218, 7, 7);
-    margin-top: 20px;
-    color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-
-}
-.btn:focus{
-    outline: none;
-}
-.srch:focus{
-    outline: none;
+ul li a:hover {
+    color: rgb(243, 10, 21);
 }
 
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(109, 82, 82, 0.2);
-    z-index: 1;
+.dropdown {
+    position: relative;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-main {
-    
-    padding: 50px;;
-  }
-
-.IT {
-    border: 1px solid #0a0f0b;
-    padding: 100px;
-    margin-top: 50px ;
-    margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(7, 11, 6);
-    text-align: center;
-  
- 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
 }
 
-.IT h2 {
-color: rgb(109, 122, 114);
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
 }
-.IT1 {
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.search {
+    margin-left: auto;
     display: flex;
-    
+    align-items: center;
+    margin-right: 20px;
 }
 
-select{
-margin-right: 50px;
-width: 200px;
-left: 0;
-height: 35px;
-background-color: #edf5ed;
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(150, 27, 206);
+    color: #fff;
+    border-right: none;
+    font-size: 15px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.job {
-    border: 1px solid #cccccc;
-    padding: 50px;
-    margin-top: 50px ;
-    margin-bottom: 20px;
-    background-color: rgb(226, 233, 228);
-    color: rgb(68, 60, 70);
-    width: 50%;
-  }
-
-  .job h2 {
-    margin: 0;
-  }
-
-  .job p {
-    margin-top: 10px;
-  }
-.container {
-    position: relative;
+.btn {
+    width: 100px;
+    height: 30px;
+    background: rgb(150, 27, 206);
+    border: 2px solid rgb(150, 27, 206);
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 5px;
+    outline: none;
 }
 
-  .apply-button {
-    position: absolute;  
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 13px;
+.content {
+    padding-top: 30px;
+}
+
+.company-header_title,
+.job-category_title {
+    font-size: 24px;
     font-weight: bold;
-    background-color: #de1818;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-left: 625px;
-  }
+    color: #7213e6;
+}
 
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
 
-  .apply-button:hover {
-    background-color: #72b670;
-  }
-
-  .luong{
-color:rgb(206, 73, 29);
-  }
- 
-  .checkbox{
-  left: 0;
-    margin-right: 10px;
-  }
-  .maucv1{
-    border: 1px solid #ee5311;
-    padding: 200px;
-    margin-top: 50px ;
+.company-item {
+    flex: 0 0 20%;
     margin-bottom: 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(7, 11, 6);
+    display: flex;
+    justify-content: center;
+}
+
+.company-logo {
+    width: 80%;
+    height: auto;
+}
+
+.job-category_table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.job-category_table .job-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
     text-align: center;
- background-image: url(https://cafefcdn.com/2019/8/22/edf-tempo-couleur-de-demain-la-edf-tempo-historique-couleur-jour-et-demain-15664469984471689659056.jpg);
- background-size: 100%;
- opacity: 0.8;
-    left:0;
-  }
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-  .maucv1 h1{
-    color: rgb(255, 255, 255);
-    font-size: 80px;
-  }
+.job-category_table .job-item:hover {
+    background-color: #ddd;
+}
 
-  .maucv1 h2{
-    color: rgb(255, 254, 254);
-    font-size: 65px;
-  }
+.job-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
 
-  .buttonmaucv{
-    position: absolute;  
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #e30d0d;
-    color: #f1f1f1;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding-left: 40px;
-    padding-top: 10px;
-   left: 43%;
-   bottom: 28%;
-  }
-  .buttonmaucv:hover {
-    background-color: #72b670;
-  }
+.menu-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.message {
+    margin-right: 20px;
+}
