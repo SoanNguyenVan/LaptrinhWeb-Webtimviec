@@ -1,0 +1,400 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website tìm việc toàn quốc</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <a href="#" style="text-decoration: none;"><h2 class="logo">TìmViệc</h2></a>
+            <div class="menu">
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Việc làm</a>
+                        <div class="dropdown-content">
+                            <a href="#">Việc làm đã ứng tuyển</a>
+                            <a href="#">Việc làm đã lưu</a>
+                            <a href="http://127.0.0.1:5500/codeweb/congviecit.html">Việc làm IT</a><br>
+                            <a href="http://127.0.0.1:5500/codeweb/congviecsenior.html">Việc làm seior</a><br>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Hồ sơ&amp;CV</a>
+                        <div class="dropdown-content">
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Quản lý CV</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Quản lý Cover Letter</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Mẫu CV</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Mẫu Cover Letter</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Dịch vụ tư vấn CV</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Hướng dẫn viết CV theo ngành nghề</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Thư việc CV theo nghành nghề</a>
+                            <a href="http://127.0.0.1:5500/codeweb/maucv.html">Top CV Profile</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Công ty</a>
+                        <div class="dropdown-content">
+                            <a href="#">Danh sách công ty</a>
+                            <a href="#">Top Công ty</a>
+                        </div>
+                        </li>
+                    <li class="dropdown">
+                        <a href="#">Phát triển sự nghiệp</a>
+                        <div class="dropdown-content">
+                            <a href="#">Top Cv Contest</a>
+                            <a href="#">Top CV Skills</a>
+                            <a href="#">Việc làm IT</a>
+                            <a href="#">Việc làm senior</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Công cụ</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tính lương</a>
+                            <a href="#">Tính thuế thu nhập cá nhân</a>
+                            <a href="#">Lập kế hoạch tốt nghiệp</a>
+                            <a href="#">Tính Bảo hiểm thất nghiệp</a>
+                            <a href="#">Tính bảo hiểm xã hội một lần</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                const dropdowns = document.querySelectorAll('.dropdown');
+                dropdowns.forEach((dropdown) => {
+                    const dropdownContent = dropdown.querySelector('.dropdown-content');
+                    dropdown.addEventListener('mouseover', () => {
+                        dropdownContent.style.display = 'block';
+                    });
+                    dropdown.addEventListener('mouseout', () => {
+                        dropdownContent.style.display = 'none';
+                    });
+                });
+            </script>
+            <div class="menu-right">
+                <div class="notification">
+                    <a href="#"><span class="material-symbols-outlined">notifications</span></a>
+                </div>
+                <div class="message">
+                    <a href="#"><span class="material-symbols-outlined">forum</span></a>
+                </div>
+                <div class="login">
+                    <button class="button1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Đăng nhập</button>
+                    <div id="id01" class="modal">
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnTQ7qrFs9SZZSU2WTJbaHZek_HnDQbmLmw5XSLBqsidpGO08UrMNCQuIAcJZQ-mkhDV4&amp;usqp=CAU" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Tên tài khoản</b></label>
+                                <input type="text" placeholder="Nhập tên" name="uname" required="">
+
+                                <label for="psw"><b>Mật khẩu</b></label>
+                                <input type="password" placeholder="Nhập mật khẩu" name="psw" required="">
+                                    
+                                <button type="submit">Đăng nhập</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button class="button1" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">HỦY</button>
+                                <span class="psw">Quên <a href="#">mật khẩu?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <script>                  
+                    var modal = document.getElementById('id01');              
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+                <!-- Đăng ký -->
+                <div class="signup">
+                    <button  class="button1" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Đăng ký</button>
+
+                    <div id="id02" class="modal2">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">×</span>
+                    <form class="modal-content2" action="/action_page.php">
+                        <div class="container2">
+                        <h1>ĐĂNG KÝ</h1>
+                        <p>Vui lòng điền thông tin để đăng ký tài khoản.</p>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Nhập Email" name="email" required="">
+                    
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập mật khẩu" name="psw" required="">
+                    
+                        <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+                        <input type="password" placeholder="Nhập lại mật khẩu" name="psw-repeat" required="">                         
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Nhớ mật khẩu
+                        </label>
+                    
+                        <p>Bằng cách tạo tài khoản bạn đồng ý với điều khoản của chúng tôi <a href="#" style="color:dodgerblue">Điều Khoản &amp; Quyền riêng tư</a>.</p>
+                    
+                        <div class="clearfix2">
+                            <button  class="button1" type="button2" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn2">HỦY</button>
+                            <button class="button1" type="submit" class="signupbtn2">ĐĂNG KÝ</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                               
+                <script>                  
+                var modal = document.getElementById('id02');                 
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+            </div>                               
+        </div>
+    </div>
+
+    <!-- Phần giữa-->
+<main>
+<div class="senior">
+    <h1>Việc làm Senior</h1>
+    <h2>Nâng tầm sự nghiệp với các cơ hội việc làm Senior</h2>
+</div>
+
+<div class="IT1">
+    
+   
+    <div>     
+    <select id="category" name="category"> 
+        <option value="1">Cấp Bậc</option> <option value="2">Mới tốt nghiệp/thực tập sinh</option> <option value="3">Nhân Viên</option> 
+        <option value="4">Trưởng phòng</option>
+    </select><br><br>
+</div>
+<div>
+    
+    <select id="category" name="category"> <option value="5">Lương</option> 
+        <option value="6">1-3 triệu</option>
+         <option value="7">3-5 triệu</option>
+         <option value="8">5-10 triệu</option>
+         <option value="9">10-20 triệu</option>
+         <option value="10">Thương lượng</option>
+     </select><br><br>
+</div>
+<div>
+    <select id="category" name="category"> <option value="11">Kinh nghiệm</option> <option value="12">Không yêu cầu</option> <option value="13">1-2 năm kinh nghiệm</option>
+    <option value="14">3-4 năm kinh nghiệm</option>
+    <option value="15">5-6 năm kinh nghiệm</option>
+     </select><br><br>
+</div>
+<div>
+    <select id="category" name="category"> <option value="16">Loại hình công việc</option> <option value="17">Bán thời gian</option> 
+
+        <option value="18">Không cố định</option>
+        <option value="18">Toàn thời gian cố định</option>
+    </select>
+        <br><br>
+       
+        
+    </div>
+</div>
+<div class="checkbox">
+    <input type="checkbox" id="subscribe" name="subscribe">Nam<br><br>
+    <input type="checkbox" id="subscribe" name="subscribe">Nữ<br><br>
+ </div>
+
+ 
+<div class="all">
+    <div class="left" >
+    <div class="job">
+      <h2>Nhân Viên Marketing - Thu Nhập Hấp Dẫn</h2>
+      <p class="location">Hai Bà Trưng,Hà Nội</p>
+      <p class="luong">Lương thử việc 8tr-lương cứng ~20tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+    </div>
+
+    <div class="job">
+      <h2>Chuyên Viên Marketing (Trade, Event, Customer Engagement)</h2>
+      <p class="location">Đống Đa,Hà Nội</p>
+      <p class="luong">Lương cứng~13tr</p>
+      <button class="apply-button">Ứng tuyển</button>
+    </div>
+
+    <div class="job">
+        <h2>Nhân Viên Thiết Kế Đồ Họa / Graphic Designer</h2>
+        <p class="location">Hà Đông,Hà Nội</p>
+        <p class="luong">Lương cứng ~16tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+      </div>
+
+      <div class="job">
+        <h2>Chuyên Viên Tư Vấn Chăm Sóc Khách Hàng
+        </h2>
+        <p class="location">Hà Đông,Hà Nội</p>
+        <p class="luong">Lương cứng ~18tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+      </div>
+
+      <div class="job">
+        <h2>Nhân Viên Truyền Thông - Marketing (Lương Cứng 8-15 Triệu)</h2>
+        <p class="location">Thanh xuân,Hà Nội</p>
+        <p class="luong">Lương cứng ~11tr</p>
+        <button class="apply-button">Ứng tuyển</button>
+    </div>
+    
+</div>
+
+    <div class="right">
+             <h2>Có thể bạn quan tâm</h2>
+           
+             <img src="https://phan.vn/wp-content/uploads/2019/12/cong-ty-tnhh-mtv-la-gi-300x224.jpg" width ="500" >
+             <p>CÔNG TY CỔ PHẦN VĂN HÓA VÀ GIÁO DỤC TÂN VIỆT</p> 
+              
+           
+
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibPau66UoiUmorFtzwLPhJgi2UPS2Um78OQ&usqp=CAU" width ="500" >
+             <p>NGÂN HÀNG TMCP VIỆT NAM THỊNH VƯỢNG (VPBANK)</p> 
+              
+             
+
+             
+           
+             <img src="https://dominofilm.vn/uploads/albums/2019/01/photo_5c4a8a821ab42.jpg" width ="500" >
+             <p>Công ty TNHH Sailun Việt Nam</p> 
+              
+             <button class="apply-button1">Tìm hiểu ngay</button>
+    </div>
+
+      
+
+    </div>
+    
+    </main>
+
+
+    <!-- Phần cuối-->
+    <div class="container">
+        <div class="box-main">
+            <div class="column">
+                <a href="#">
+                    <img src="" class="img-logo-footer img-responsive" alt="Tìm việc" title="Tim Việc">
+                </a>
+                <div class="box-image-flex">
+                    <img src="https://www.topcv.vn/v4/image/footer/google_for_startup.png?v=1.0.0" class="img-responsive" alt="" title="">
+                    <img src="https://www.topcv.vn/v4/image/footer/dmca.png?v=1.0.0" class="img-responsive" alt="" title="">
+                    
+                </div>
+                <div class="box-contact">
+                    <p class="title">Liên hệ</p>
+                    <span>Hotline:</span><a href="tel:02466805588">(024) 27873 588 (Giờ hành chính)</a><br>
+                    <span>Email:</span><a href="mailto:hotro@topcv.vn">hotro@soandung.vn</a>
+                </div>
+                <div class="box-download">
+                    <p class="title">Ứng dụng tải xuống</p>
+                    <div class="btn-download-app">
+                        <a target="_blank" href="#"><img class="img-responsive" src="https://www.topcv.vn/v4/image/welcome/download/app_store.png?v=1.0.0" alt="Tai app tai App Store" title="Tải app tại App Store"></a>
+                        <a target="_blank" href="#"><img class="img-responsive" src="https://www.topcv.vn/v4/image/welcome/download/chplay.png?v=1.0.0" alt="Tai app TopCV tai Google Play" title="Tải app tại Google Play"></a>
+                    </div>
+                </div>
+                <div class="box-social">
+                    <p class="title">Cộng đồng Tìm Việc</p>
+                    <div class="btn-list-social">
+                        <a target="_blank" href="#">
+                            <img class="img-responsive" src="https://www.topcv.vn/v4/image/footer/facebook.png?v=1.0.0">
+                        </a>
+                        <a target="_blank" href="#">
+                            <img class="img-responsive" src="https://www.topcv.vn/v4/image/footer/youtube.png?v=1.0.0">
+                        </a>
+                        <a target="_blank" href="#">
+                            <img class="img-responsive" src="https://www.topcv.vn/v4/image/footer/linkedin.png?v=1.0.0">
+                        </a>
+                        <a target="_blank" href="#">
+                            <img class="img-responsive" src="https://www.topcv.vn/v4/image/footer/tiktok.png?v=1.0.0">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box-menu-item">
+                    <div class="title">Về TopCV</div>
+                    <div class="box-menu-child">
+                        <a target="_blank" href="#/">Giới thiệu</a>
+                        <a target="_blank" href="#">Góc báo chí</a>
+                        <a target="_blank" href="#">Tuyển dụng</a>
+                        <a target="_blank" href="#">Liên hệ</a>
+                        <a target="_blank" href="#">Hỏi đáp</a>
+                        <a target="_blank" href="#">Chính sách bảo mật</a>
+                        <a target="_blank" href="#">Điều khoản dịch vụ</a>
+                        <a href="#" target="_blank">Quy chế hoạt động</a>
+                    </div>
+                </div>
+                <div class="box-menu-item">
+                    <div class="title">Đối tác</div>
+                    <div class="box-menu-child">
+                        <a href="#" target="_blank">TestCenter</a>
+                        <a href="#" target="_blank">TopHR</a>
+                        <a href="#" target="_blank">ViecNgay</a>
+                        <a href="#" target="_blank">Happy Time</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box-menu-item">
+                    <div class="title">Hồ sơ và CV</div>
+                    <div class="box-menu-child">
+                        <a href="#" target="_blank">Quản lý CV của bạn</a>
+                        <a href="#" target="_blank">TopCV Profile</a>
+                        <a target="_blank" href="#">Hướng dẫn viết CV</a>
+                        <a href="#" target="_blank">Thư viện CV theo ngành nghề</a>
+                        <a href="#" target="_blank">Review CV</a>
+                    </div>
+                </div>
+                <div class="box-menu-item">
+                    <div class="title">Khám phá</div>
+                    <div class="box-menu-child">
+                        <a href="#" target="_blank">Ứng dụng di động TopCV</a>
+                        <a href="#" target="_blank">Tính lương Gross - Net</a>
+                        <a href="#" target="_blank">Tính lãi suất kép</a>
+                        <a href="#" target="_blank">Lập kế hoạch tiết kiệm</a>
+                        <a href="#" target="_blank">Tính bảo hiểm thất nghiệp</a>
+                        <a href="#" target="_blank">Tính bảo hiểm xã hội một lần</a>
+                        <a href="#" target="_blank">Trắc nghiệm MBTI</a>
+                        <a href="#" target="_blank">Trắc nghiệm MI</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box-menu-item">
+                    <div class="title">Xây dựng sự nghiệp</div>
+                    <div class="box-menu-child">
+                        <a href="#" target="_blank">Việc làm tốt nhất</a>
+                        <a href="#" target="_blank">Việc làm lương cao</a>
+                        <a href="#" target="_blank">Việc làm quản lý </a>
+                        <a href="#" target="_blank">Việc làm IT </a>
+                        <a href="#" target="_blank">Việc làm Senior</a>
+                        <a href="#" target="_blank">Việc làm bán thời gian</a>
+                    </div>
+                </div>
+                <div class="box-menu-item">
+                    <div class="title">Phát triển bản thân</div>
+                    <div class="box-menu-child">
+                        <a href="#" target="_blank">Contest</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+</body></html>
